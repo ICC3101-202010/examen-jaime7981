@@ -10,10 +10,10 @@ namespace ExamenPOO.Tipo_de_Jugadores
     {
 
 
-        public Mediocampo(string nombre, int edad, string nacionalidad, int sueldo, int ataque, int defensa, int camiseta, int fatiga) :
-            base(nombre, edad, nacionalidad, sueldo, ataque, defensa, camiseta, fatiga)
+        public Mediocampo(string nombre, int edad, string nacionalidad, int sueldo, int ataque, int defensa, int camiseta, int fatiga, string tipo) :
+            base(nombre, edad, nacionalidad, sueldo, ataque, defensa, camiseta, fatiga, tipo)
         {
-
+            tipo = "Mediocampo";
         }
     }
 }

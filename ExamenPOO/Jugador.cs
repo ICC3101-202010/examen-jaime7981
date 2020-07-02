@@ -13,9 +13,11 @@ namespace ExamenPOO
         private int defensa;
         private int camiseta;
         private int fatiga;
+        private string tipo;
+
 
         public Jugador(string nombre, int edad, string nacionalidad, int sueldo,
-                      int ataque, int defensa, int camiseta, int fatiga) : base(nombre, edad, nacionalidad, sueldo)
+                      int ataque, int defensa, int camiseta, int fatiga, string tipo) : base(nombre, edad, nacionalidad, sueldo)
         {
             this.ataque = ataque;
             this.defensa = defensa;
@@ -26,6 +28,16 @@ namespace ExamenPOO
         public void Lesion()
         {
 
+        }
+
+        public string GetTipo()
+        {
+            return tipo;
+        }
+
+        public int GetCamiseta()
+        {
+            return camiseta;
         }
     }
 }

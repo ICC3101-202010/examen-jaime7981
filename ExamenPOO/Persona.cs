@@ -13,6 +13,7 @@ namespace ExamenPOO
         private string nacionalidad;
         private int sueldo;
 
+
         public Persona(string nombre, int edad, string nacionalidad, int sueldo)
         {
             this.nombre = nombre;
@@ -24,6 +25,16 @@ namespace ExamenPOO
         public string InfoPersonal()
         {
             return ("Nombre: " + nombre + "\nEdad: " + edad + "\nNacionalidad: " + nacionalidad + "\nSueldo: " + sueldo);
+        }
+
+        public string GetPersonName()
+        {
+            return nombre;
+        }
+
+        public string GetNacionalidad()
+        {
+            return nacionalidad;
         }
     }
 }
